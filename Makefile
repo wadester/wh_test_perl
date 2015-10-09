@@ -8,4 +8,5 @@ all::
 	echo "TBD -- most are scripts so no compile"
 
 clean::	   
-	echo "TBD"
+	./cleanup.pl
+
