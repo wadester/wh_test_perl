@@ -1,4 +1,4 @@
-#!/usr/bin/perl 
+#!/usr/bin/perl -w
 #
 # Module:   daemon.pl
 # Purpose:  This module makes a perl daemon
@@ -13,6 +13,7 @@ my $ofile       = "testfile.txt";
 
 # includes
 use POSIX qw(setsid);
+use Time::localtime;
 
 
 print "daemon.pl:  test of making a daemon\n";
@@ -45,8 +46,10 @@ setsid                    or die "can't start new sessions: $!";
 #  }    
 
 for (my $ii=0; $ii<5; $ii++) {
-    printf "%03d Test to stdout\n", $ii;
-    printf OF "%03d Test line\n", $ii;
+    my $t = time();
+    my $tm = localtime($t);
+    printf "%03d %ld %d Test to stdout\n", $ii, $t, $tm->sec;
+    printf OF "%03d %ld %d Test line\n", $ii, $t, $tm->sec;
     sleep (1);
 }
 exit(0);
