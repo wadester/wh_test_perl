@@ -7,6 +7,8 @@
 # Notes:
 # 1) Add files to be cleaned up here....
 #
+use warnings;
+
 my @clean_files = qw(testfile.txt);
 # push @clean_files, 'newfile';
 
