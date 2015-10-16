@@ -33,10 +33,41 @@ my @l2 = (1, 2, 3, 4);
 my @l3 = (1, "asdf", 2, "jkl;");
 # use the qw(...) for lists of words and whitespace
 my @l4 = qw(This is a test);
+my @l5 = qw<This is (a) test>;
+my @l6 = qw(
+            Hello
+            World
+            Welcome
+            Aliens
+           );
 print "Lists:  @l1, @l2, @l3\n";
-print "l4: @l4\n";
+print "        @l4, @l5, @l6\n";
 
 # define some hashes which start with %
+my %h1 = (
+    "k1",  "val1",
+    "k2",  "val22",
+    "k3",  "val333"
+    );
+
+my %h2 = (
+    k1 =>  "val1",
+    k2 =>  "val22",
+    k3 =>  "val333"
+    );
+
+print "H1 for k1 is: ".$h1{k1}."\n";
+my $key = "k2";
+print "H1 for $key is: ".$h1{$key}."\n";
+
+print "H1 is:\n";
+for (keys %h1) {
+    print "key $_, val $h1{$_}\n";
+}
+
+
+
+
 
 
 
