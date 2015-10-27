@@ -16,6 +16,8 @@ History:
 
 1) 0.1   10/6/2015    created
 
+2) 0.2   10/27/2015   updated, added links
+
 Notes:
 ======
 
@@ -23,12 +25,23 @@ Notes:
     this format for MANY years (I may upload a tool or migrate to asciidoc).
 
 2)  This project is mainly to experiment with github and with Perl.  It is
-    losely based on my wh_test_py github repository.
+    loosely based on my wh_test_py github repository.
 
 3)  License for ALL files is GPL, see LICENSE.
 
-4)  Please e-mail me with any updates, suggesions, etc.
+4)  Please e-mail me with any updates, suggestions, etc.
 
 5)  Programs include TBD.
 
 6)  After running the programs, run make clean to remove test files.
+
+Links:
+======
+
+1) Official Perl documentation:
+
+   http://perldoc.perl.org/
+
+2) Beginning Perl (from learn.perl.org):
+
+   http://learn.perl.org/books/beginning-perl/
