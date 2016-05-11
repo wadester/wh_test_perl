@@ -48,6 +48,17 @@ foreach my $pl_file (@l1) {
     printf "File %04d is %s\n", $ii++,  $pl_file;
 }
 
+$ii=1;
+print "Iterating using shift\n";
+my @l2 = @l1;
+for(;;) {
+  my $item = shift @l2;
+  if (! defined $item) {
+	last;
+  }
+  printf "File %04d is %s\n", $ii++,  $item;
+}
+
 print "Using unshift to add at first of the list\n";
 unshift (@l1, "new.pl");
 
